@@ -1,0 +1,49 @@
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1> Announcements & Upcoming Events  </h1>
+            <br>
+            <button (click)="gotoadd()">Add New Announcement</button>
+
+        </div>
+     
+
+        <div class="events">
+@for(new of newAnnouncement ; track new.title){
+            <div class="event-card">
+                <h1>Announcement 🔔 </h1>
+                <h3>{{new.title}}</h3>
+                <div class="date">{{new.Time |  date :"fullDate"}}</div>
+                <p>{{new.description}}</p>
+                <button (click)="gotoDelete(new.id)" >Delete</button>
+                <div class="email-btn-container">
+                    <button class="send-email-btn" (click)="sendemail('nadeen@gmail.com',new.title,new.description)">
+                      <i class="fas fa-envelope"  ></i> Send Email 📨
+                    </button>
+                  </div>
+              
+            </div>
+          
+        }
+            <div class="event-card">
+            
+                <h2>Upcoming Event</h2>
+
+                <h3>{{Upcoming.title}}</h3>
+                <div class="date">{{Upcoming.Time |  date :"fullDate"}}</div>
+
+                <p>{{Upcoming.description}}</p>
+                <p>{{Upcoming.location}}</p>
+                <div class="email-btn-container">
+                    <button class="send-email-btn" (click)="sendemail('nadeen@gmail.com',Upcoming.title,Upcoming.description)">
+                      <i class="fas fa-envelope" ></i> Send Email 📨
+                    </button>
+                  </div>
+            </div>
+           
+        </div>
+    </div>
+   
+      
+</body>

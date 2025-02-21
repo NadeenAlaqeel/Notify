@@ -1,0 +1,23 @@
+/* Ensure event titles wrap or truncate */
+.full-calendar-container .fc-event {
+    white-space: normal; /* Allow text to wrap */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis for truncated text */
+    padding: 4px 8px; /* Padding inside events */
+    font-size: 14px; /* Event text size */
+    line-height: 1.4; /* Adjust line height for better readability */
+    height: auto; /* Allow height to adjust based on content */
+    min-height: 30px; /* Minimum height to ensure visibility */
+  }
+  
+  /* Add a tooltip for long titles */
+  .full-calendar-container .fc-event {
+    position: relative;
+  }
+  
+  .full-calendar-container .fc-event:hover::after {
+    content: attr(title); /* Display the full title on hover */
+  
+  }
+  
+  

@@ -1,0 +1,52 @@
+<form [formGroup]="form" (ngSubmit)="onsumbit()" > 
+  <h2>Add/Edit Event</h2>
+
+  <div class="control-row">
+    <div class="control no-margin">
+      <label for="title">Event Title</label>
+      <input id="title" formControlName="title"  />
+      @if(form.controls.title.touched && form.controls.title.invalid){
+      <small class="error" >
+        Event title is required!
+      </small>}
+    </div>
+
+    <div class="control no-margin">
+      <label for="description">Event Description</label>
+      <textarea id="description" formControlName="description"></textarea>
+      @if(form.controls.description.touched && form.controls.description.invalid){
+
+        <small class="error" >
+          Event description is required!
+        </small>
+      }
+    </div>
+
+    <div class="control no-margin">
+      <label for="date">Event Date</label>
+      <input type="date" id="date" formControlName="date"  />
+@if(form.controls.date.touched && form.controls.date.invalid){
+  <small class="error" >
+    Event date is required!
+  </small>
+
+
+}
+
+    </div>
+
+    <div class="control no-margin">
+      <label for="location">Event Location</label>
+      <input id="location" formControlName="location"  />
+
+      @if(form.controls.location.touched && form.controls.location.invalid){
+
+        <small class="error">
+          Event location is required!
+        </small>
+      }
+    </div>
+
+    <button class="button" [disabled]="form.invalid">Submit</button>
+  </div>
+</form>

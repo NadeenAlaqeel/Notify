@@ -1,0 +1,46 @@
+<body>
+  
+    <header>
+        <h2 class="title">Grow Your Network & Skills with Our Events</h2>
+        <nav>
+            <button (click)="gotoAdd()" class="login-button">Add New Event</button>
+          
+        </nav>
+        <div class="Filter">
+            <input type="text" [(ngModel)]="search" placeholder="Search events..." />
+            <br>
+            <select [(ngModel)]="filter">
+              <option value="title">Title</option>
+              <option value="location">Location</option>
+              <option value="date">Date</option>
+            </select>
+          </div>
+        
+    </header>
+    <ul *ngFor="let Event of this.Theevents | filterEvents: search : filter">
+
+    <div class="container">
+        <div class="event" >
+           
+
+                  <h1> {{Event.title | titlecase  }}</h1>
+                  <h2>{{Event.description}}</h2>
+                  <h3>Event Details:</h3>
+                  
+                 <p>Dates: {{Event.Time |  date :"fullDate"}}</p>
+                 <p>  Location: {{Event.location}}</p>
+                  
+                
+                <div class="login-button">
+                    <button  (click)="gotoEdit(Event.id)">Edit</button>
+                    <button (click)="gotoDelete(Event.id)" >Delete</button>
+                </div>
+            
+           
+
+        </div>
+       
+    </div>
+  
+    </ul>
+</body>

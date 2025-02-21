@@ -1,0 +1,104 @@
+/* Navbar Background Gradient */
+.navbar {
+    background: linear-gradient(to right, #4A00E0, #FF0099); /* Match logo gradient */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Navbar Brand Logo */
+.navbar img {
+    width: 100px;
+    height: 100px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+/* Navbar Links */
+.navbar-nav {
+    display: flex;
+    gap: 15px; /* Spacing between items */
+}
+
+.navbar-nav .nav-item {
+    list-style: none;
+    margin-left: 15px;
+    text-align: center;
+
+
+}
+
+/* Navbar Links Styling */
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Active & Hover Effect */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFD700 !important; /* Gold color */
+    cursor: alias;
+}
+
+
+
+/* Responsive Navbar */
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    min-width: 200px;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  
+  /* Dropdown Item Styling */
+  .dropdown-item {
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Divider Styling */
+  .dropdown-divider {
+    height: 1px;
+    margin: 5px 0;
+    background-color: #ddd;
+    border: none;
+  }
+  
+  /* Show Dropdown on Hover */
+  .nav-item:hover .dropdown-menu {
+    display: block;
+  }

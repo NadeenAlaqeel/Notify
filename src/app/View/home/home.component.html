@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Reminder</title>
+</head>
+<br>
+    <div class="container">
+        <div class="reminder">
+            <span class="title">Daily Reminder🔔</span><br>
+              <div >
+                <div class="date">{{Dailydata | date :"fullDate"}}</div>
+            <p>{{title |  titlecase}}</p>          
+            </div>
+            <hr>
+            <button (click)="gotologin()" class="login-button">Log in </button>
+        </div>
+    </div>
+   
+</html>
+

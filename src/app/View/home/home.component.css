@@ -1,0 +1,114 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+}
+
+
+
+/* Reminder Box */
+.reminder {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(80px);
+    border-radius: 15px;
+    padding: 10px;
+    width: 800px;
+    text-align: center;
+    color: black;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    align-items: center;
+
+}
+
+/* Reminder Header */
+.reminder-header {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px;
+
+}
+
+/* Message Styling */
+.message {
+    font-size: 16px;
+    margin: 10px 0;
+    animation: pulse 2s infinite;
+
+}
+
+/* Button */
+.login-button {
+    background: linear-gradient(to right, #4A00E0, #FF0099); /* Match logo gradient */
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    color: #FFD700 !important; /* Gold color */
+    cursor: alias;
+    border-radius: 15px;
+
+
+}
+.login-button:hover {
+  background:#007bff;
+  transform: translateY(-3px);
+
+}
+
+.reminder{
+    font-weight: bold;
+
+
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .time {
+        font-size: 60px;
+    }
+
+    .reminder {
+        width: 90%;
+    }
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the title */
+.title {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #050505; /* Tomato color */
+    animation: pulse 2s infinite; /* 2s duration, infinite loop */
+}

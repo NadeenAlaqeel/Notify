@@ -1,0 +1,74 @@
+/* example-container.css */
+
+.example-container {
+    max-width: 400px; /* Limit the width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add some padding around the form */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    
+
+  }
+  
+  /* Style for mat-form-field */
+  .example-container mat-form-field {
+    width: 100%; /* Full width of the container */
+    margin-bottom: 16px; /* Space between form fields */
+  }
+  
+  /* Style for input fields */
+  .example-container mat-form-field input {
+    font-size: 16px; /* Increase font size for better readability */
+    color: #333; /* Dark text color */
+    
+  }
+  
+  /* Style for mat-label */
+  .example-container mat-form-field mat-label {
+    color: #666; /* Gray color for labels */
+    font-size: 14px; /* Label font size */
+  }
+  
+  /* Style for the password toggle button */
+  
+  /* Style for error messages */
+  .example-container mat-form-field mat-error {
+    color: #dc3545; /* Red color for error messages */
+    font-size: 12px; /* Smaller font size for errors */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .example-container {
+      padding: 15px; /* Reduce padding on smaller screens */
+    }
+}
+
+.example-container h2{
+
+    text-align: center;
+    color:#FF0099;
+    margin-bottom: 20px;
+}
+.login-button {
+    background: linear-gradient(to right, #4A00E0, #FF0099); /* Match logo gradient */
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    color: #FFD700 !important; /* Gold color */
+    cursor: alias;
+    border-radius: 15px;
+    align-items: center; /* Vertically center (optional) */
+
+}
+.login-button:hover {
+  background:#007bff;
+  transform: translateY(-3px);
+
+}
+    
+
+

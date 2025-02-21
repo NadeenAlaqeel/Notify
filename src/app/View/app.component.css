@@ -1,0 +1,11 @@
+.footer {
+    margin-top: 20px;
+    font-size:19px;
+    opacity: 0.8;
+    background: linear-gradient(to right, #4A00E0, #FF0099); /* Match logo gradient */
+    padding: 10px 20px;
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+      
+}

@@ -1,0 +1,42 @@
+<div class="example-container">
+    <h2>Log in</h2>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <!-- Email Field -->
+      <mat-form-field>
+        <mat-label>Enter your email</mat-label>
+        <input
+          matInput
+          placeholder="pat@example.com"
+          formControlName="email"
+          required
+        />
+        <mat-error>
+          {{ form.get('email')?.hasError('required') ? 'Email is required.' : 'Please enter a valid email address.' }}
+        </mat-error>
+      </mat-form-field>
+  
+      <!-- Password Field -->
+      <mat-form-field>
+        <mat-label>Enter your password</mat-label>
+        <input
+          matInput
+          [type]="hidePassword ? 'password' : 'text'"
+          placeholder="Password"
+          formControlName="password"
+          required
+        />
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="togglePasswordVisibility($event)"
+          [attr.aria-label]="hidePassword ? 'Show password' : 'Hide password'"
+          [attr.aria-pressed]="!hidePassword"
+        >
+          <mat-icon>{{ hidePassword ? '🙉' : '🙈' }}</mat-icon>
+        </button>
+      </mat-form-field>
+  
+      <!-- Login Button -->
+      <button type="submit" class="login-button">Log in</button>
+    </form>
+  </div>

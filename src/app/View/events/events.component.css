@@ -1,0 +1,144 @@
+
+header {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    color: #080808;
+}
+
+.container {
+    padding: 20px;
+}
+.event {
+    background: linear-gradient(to right, #4A00E0, #FF0099); /* Match logo gradient */
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color:  aliceblue;
+    font-weight: bold;
+
+
+
+  
+}
+
+.event button  {
+    background: linear-gradient(to right, #4A00E0, #FF0099); /* Match logo gradient */
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;   
+     color: #FFD700 !important; /* Gold color */
+    cursor: alias;
+    border-radius: 15px;
+
+
+}
+.event button:hover{
+
+    color: #5500ff !important; /* Gold color */
+    cursor: alias;
+    transform: translateY(-3px);
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+nav a {
+    color: #3a1370;
+    text-decoration: none;
+}
+.login-button {
+    background: linear-gradient(to right, #4A00E0, #FF0099); /* Match logo gradient */
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;   
+     color: #FFD700 !important; /* Gold color */
+    cursor: alias;
+    border-radius: 15px;
+
+}
+.login-button:hover{
+
+    border-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-3px);
+
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the title */
+.event h1 {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f9eaea; 
+    animation: pulse 2s infinite; /* 2s duration, infinite loop */
+}
+
+.Filter {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 10px 0;
+    padding: 20px;
+
+  }
+  
+  .Filter select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+  }
+  
+  .Filter select:hover {
+    border-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-3px);
+
+  }
+  
+  .Filter select:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  input{
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+  }
+  
