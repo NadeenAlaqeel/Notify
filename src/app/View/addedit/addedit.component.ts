@@ -68,7 +68,7 @@ this.form.value.location ?? ""
 );
 
 this.route.navigate(['/Events'])
-this.toastr.warning('Event Updated successfully!', 'Success'); 
+this.toastr.success('Event Updated successfully!', 'Success'); 
 
 
   }
